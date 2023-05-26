@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playersRV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/start"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playersRV" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnStart" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="48sp"
+        app:layout_constraintTop_toBottomOf="@id/definition" />
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/word" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turn">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/letterInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="48sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turn" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/add_new"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

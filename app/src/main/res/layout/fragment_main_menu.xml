@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play" />
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/words" />
+
+</LinearLayout>

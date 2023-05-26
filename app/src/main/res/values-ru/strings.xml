@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wheel of Fortune</string>
+    <string name="words">Список слов</string>
+    <string name="play">Играть</string>
+    <string name="addNew">Добавить новое слово</string>
+    <string name="clear">Очистить список слов</string>
+    <string name="wordHint">Введите слово</string>
+    <string name="defHint">Введите определение</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="start">Начать</string>
+    <string name="nickname">Никнейм</string>
+    <string name="add">Добавить</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="alert_check">Вы уверены?</string>
+    <string name="words_delete_alert">Ваш список слов будет удален.</string>
+    <string name="noWordsException">Ваш список слов пуст!</string>
+    <string name="wrongLetter">Данной буквы в слове нет!</string>
+    <string name="noLetter">Введите букву!</string>
+    <string name="turn">Ход игрока</string>
+    <string name="required">Необходимо</string>
+    <string name="winner">Победитель</string>
+</resources>
